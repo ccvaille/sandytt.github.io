@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hello, 欢迎你来到这里" />
+  <meta name="keywords" content="sublime," />
 
 
 
@@ -84,15 +84,49 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="COOLFE">
-<meta property="og:url" content="http://sandytt.github.io/index.html">
+<meta name="description" content="常用插件
+Package Control
+
+sublime插件控制台，提供添加、删除、禁用、查找插件等功能
+
+
+ctrl+` 粘贴代码
+
+
+
+ST2:
+1import urllib2,os; pf=&amp;apos;Package Control.sublime-package&amp;apos;; ipp = sublime.installed_packages_path(); os.makedirs( ip">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sublime 使用技巧">
+<meta property="og:url" content="http://sandytt.github.io/2016/06/22/Sublime-使用技巧/index.html">
 <meta property="og:site_name" content="COOLFE">
-<meta property="og:description">
+<meta property="og:description" content="常用插件
+Package Control
+
+sublime插件控制台，提供添加、删除、禁用、查找插件等功能
+
+
+ctrl+` 粘贴代码
+
+
+
+ST2:
+1import urllib2,os; pf=&amp;apos;Package Control.sublime-package&amp;apos;; ipp = sublime.installed_packages_path(); os.makedirs( ip">
+<meta property="og:updated_time" content="2016-06-22T14:52:18.353Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="COOLFE">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Sublime 使用技巧">
+<meta name="twitter:description" content="常用插件
+Package Control
+
+sublime插件控制台，提供添加、删除、禁用、查找插件等功能
+
+
+ctrl+` 粘贴代码
+
+
+
+ST2:
+1import urllib2,os; pf=&amp;apos;Package Control.sublime-package&amp;apos;; ipp = sublime.installed_packages_path(); os.makedirs( ip">
 
 
 
@@ -110,7 +144,7 @@
   };
 </script>
 
-  <title> COOLFE </title>
+  <title> Sublime 使用技巧 | COOLFE </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -131,9 +165,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -230,9 +262,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -252,10 +284,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/06/22/Sublime-使用技巧/" itemprop="url">
-                  Sublime 使用技巧
-                </a>
+                Sublime 使用技巧
               
             
           </h1>
@@ -314,8 +343,7 @@
       
 
       
-        
-          <h2 id="常用插件"><a href="#常用插件" class="headerlink" title="常用插件"></a>常用插件</h2><ul>
+        <h2 id="常用插件"><a href="#常用插件" class="headerlink" title="常用插件"></a>常用插件</h2><ul>
 <li><p>Package Control</p>
 <blockquote>
 <p>sublime插件控制台，提供添加、删除、禁用、查找插件等功能</p>
@@ -328,504 +356,197 @@
 <p>ST2:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import urllib2,os; pf=&apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), &apos;wb&apos; ).write( urllib2.urlopen( &apos;http://sublime.wbond.net/&apos; +pf.replace( &apos; &apos;,&apos;%20&apos; )).read()); print( &apos;Please restart Sublime Text to finish installation&apos;)</span><br></pre></td></tr></table></figure>
 <p> ST3:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import urllib.request,os; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), &apos;wb&apos;).write(urllib.request.urlopen( &apos;http://sublime.wbond.net/&apos; + pf.replace(&apos; &apos;,&apos;%20&apos;)).read())</span><br></pre></td></tr></table></figure></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/06/22/Sublime-使用技巧/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/12/Hexo-搭建博客/" itemprop="url">
-                  Hexo 搭建博客
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-12T20:43:40+08:00" content="2016-05-12">
-              2016-05-12
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>一个简易的Hexo的搭建博客的教程，搭建环境：Window 10，node（v6.0.0），git（2.8.1.windows.1）</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/12/Hexo-搭建博客/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/11/Less学习笔记/" itemprop="url">
-                  Less学习笔记
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-11T22:44:03+08:00" content="2016-05-11">
-              2016-05-11
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="Less是什么"><a href="#Less是什么" class="headerlink" title="Less是什么"></a>Less是什么</h3><p>动态样式语言，属于CSS预处理语言的一种，像写函数那样子写CSS.</p>
+<a id="more"></a>
+<ul>
+<li><p>BracketHighlighter </p>
+<blockquote>
+<p>高亮匹配括号、标签 </p>
+</blockquote>
+</li>
+<li><p>Emmet(Zen Coding)</p>
+<blockquote>
+<p>html/css 快速编辑</p>
+</blockquote>
+<ul>
+<li>a#name</li>
+<li>a.name</li>
+<li>a.name1.name2</li>
+<li>a#name.name2.name3</li>
+<li>a&gt;b</li>
+<li>ul#name&gt;li.item*3 </li>
+<li>div#name&gt;p.one+p.two</li>
+<li>p.name-$*3</li>
+</ul>
+</li>
+<li><p>AutoFileName</p>
+<blockquote>
+<p>自动完成文件路径</p>
+</blockquote>
+</li>
+<li><p>SFTP</p>
+<blockquote>
+<p>上传 FTP 文件</p>
+</blockquote>
+</li>
+<li><p>git </p>
+</li>
+<li><p>HTML/CSS/JS Prettify</p>
+<blockquote>
+<p>代码格式化</p>
+</blockquote>
+</li>
+<li><p>Markdown Editing</p>
+<blockquote>
+<p>支持 Markdown 语法高亮</p>
+</blockquote>
+</li>
+<li><p>PlainTasks</p>
+<blockquote>
+<p>支持 *.todo</p>
+</blockquote>
+</li>
+<li><p>less</p>
+<blockquote>
+<p>less 语法高亮</p>
+</blockquote>
+</li>
+<li><p>jQuery</p>
+<blockquote>
+<p>jQuery 函数提示</p>
+</blockquote>
+</li>
+<li><p>Nodejs</p>
+<blockquote>
+<p>node 代码提示</p>
+</blockquote>
 <hr>
-<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/*我是被编译的*/</span><br><span class="line">//不会被编译</span><br></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/11/Less学习笔记/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/16/初探键盘事件/" itemprop="url">
-                  初探键盘事件
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-16T22:09:23+08:00" content="2016-04-16">
-              2016-04-16
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="Event-Handlers"><a href="#Event-Handlers" class="headerlink" title="Event Handlers"></a>Event Handlers</h2><ul>
-<li><p>触发</p>
-<ul>
-<li>一般：<ul>
-<li>KeyDown事件：有焦点的情况下按下键时触发</li>
-<li>KeyPress事件：有焦点的情况下按下键时触发</li>
-<li>KeyUp事件：有焦点的情况下释放键时触发</li>
-</ul>
-</li>
-<li>中英文：<ul>
-<li>中文：keypress 失效</li>
-<li>英文：keydown - &gt; keypress - &gt; keyup</li>
-</ul>
 </li>
 </ul>
+<h2 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h2><ul>
+<li>编辑<ul>
+<li>Ctrl + Enter 当前行下面新增一行</li>
+<li>Ctrl + Shift + Enter 当前行上面增加一行</li>
+<li>Ctrl + ←/→  逐词移动</li>
+<li>Ctrl + Shift + ←/→  逐词选择</li>
+<li>Ctrl + Shift + ↑/↓  移动当前行</li>
+<li>Ctrl + X 删除当前行</li>
+</ul>
 </li>
-<li><p>属性</p>
-<ul>
-<li>charCode：用户按下的字符键对应的ASCII编码</li>
-<li>keyCode：用户按下的键对应的ASCII编码</li>
+<li>选择<ul>
+<li>Ctrl + D 多重选择</li>
+<li>F3 选中相同的下一个</li>
+<li>Shift + F3  选中相同的上一个</li>
+<li>Ctrl + K + D 跳过选择</li>
+<li>Ctrl + Shift + L 打散</li>
+<li>Ctrl + J 合并一行</li>
+<li>Ctrl + L 选中当前行</li>
+<li>Alt + F3 选择所有相同的词</li>
+</ul>
+</li>
+<li>查找/替换<ul>
+<li>Ctrl + F</li>
+<li>Ctrl + H</li>
+</ul>
+</li>
+<li>跳转<ul>
+<li>Ctrl + P 列出当前打开的文件(Go To Anything) </li>
+<li>Ctrl + R 列出当前文件的符号(类名、函数名)</li>
+<li>Ctrl + G 跳到指定行数</li>
+</ul>
+</li>
+<li>other<ul>
+<li>Ctrl + K, Ctrl + B 显示|隐藏侧栏 </li>
+<li>Ctrl + Shift + N 创建一个新窗口</li>
+<li>Ctrl + N 新建一个标签</li>
+<li>Ctrl + W 关闭当前标签</li>
+<li>Ctrl + Shift + T 恢复刚关闭的标签</li>
+<li>Alt + Shift + 2 左右分屏</li>
+<li>Alt + Shift + 8 上下分屏</li>
+<li>Alt + Shift + 5 上下左右分屏</li>
+<li>Ctrl + num 跳到指定屏</li>
+<li>Ctrl + K + K 从光标处删除至行尾</li>
+<li>Ctrl + K + U 大写</li>
+<li>Ctrl + K + L 小写</li>
+<li>Ctrl + K + T 折叠所有属性</li>
+<li>Ctrl + K + 0 展开所有</li>
+<li>Ctrl + Shift + [ 折叠代码</li>
+<li>Ctrl + Shift + ] 展开代码</li>
+</ul>
+</li>
+<li>全屏<ul>
+<li>F11 普通全屏</li>
+<li>Shift + F11 无干扰全屏</li>
 </ul>
 </li>
 </ul>
 <hr>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/04/16/初探键盘事件/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+<ul>
+<li><p>参考链接</p>
+<ul>
+<li><p><a href="http://ipestov.com/the-best-plugins-for-sublime-text/" target="_blank" rel="external">The Best Plugins for Sublime Text</a></p>
+</li>
+<li><p><a href="http://www.xuanfengge.com/practical-collection-of-sublime-plug-in.html" target="_blank" rel="external">实用的sublime插件集合 – sublime推荐必备插件</a></p>
+</li>
+<li><p><a href="http://www.xuanfengge.com/sublime-text-2-artifact.html" target="_blank" rel="external">sublime text 2 前端编码神器-快捷键与使用技巧介绍</a></p>
+</li>
+<li><p><a href="https://www.zhihu.com/question/24896283" target="_blank" rel="external">Sublime Text 有哪些使用技巧？</a></p>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/10/first/" itemprop="url">
-                  hello world
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-10T00:35:44+08:00" content="2016-04-10">
-              2016-04-10
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
-          
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/sublime/" rel="tag">#sublime</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>兜兜转转，一个月的时光，才把这个页面搭起来。很长的时间，一直在绕圈，还好，这次终于弄好了。</p>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/12/Hexo-搭建博客/" rel="next" title="Hexo 搭建博客">
+                <i class="fa fa-chevron-left"></i> Hexo 搭建博客
+              </a>
+            
+          </div>
 
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -833,6 +554,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -852,8 +577,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/logo.png"
@@ -932,6 +666,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#常用插件"><span class="nav-number">1.</span> <span class="nav-text">常用插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用快捷键"><span class="nav-number">2.</span> <span class="nav-text">常用快捷键</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -1035,6 +780,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
