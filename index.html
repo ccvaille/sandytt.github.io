@@ -315,199 +315,17 @@
 
       
         
-          
-            <h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><ul>
+          <h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><ul>
 <li>区分大小写；</li>
 <li>第一个字符必须是字母 || “_” || “$”；</li>
 <li>按照惯例，ECMScript 标识符采用驼峰大小写格式，第一个字母小写，色好难过下单词首字母大写；</li>
 <li>变量：var 定义的变量成为该变量的作用域中的局部变量，函数退出后销毁；</li>
 </ul>
-<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ul>
-<li>基础数据类型<pre><code>- undefine    
-- null  空对象指针    
-- boolean    
-- number     
-- string    
-</code></pre></li>
-<li>复杂数据类型<ul>
-<li>object</li>
-</ul>
-</li>
-<li><p>typeof 操作符</p>
-<ul>
-<li>undefine   未声明或者未初始化 </li>
-<li><p>boolean    布尔值</p>
-<ul>
-<li><p>true</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">boolean true</span><br><span class="line">string 任何非空字符串</span><br><span class="line">number 任何非零数字值（包括无穷大）</span><br><span class="line">object 任何对象</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>false</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">boolean false</span><br><span class="line">string &quot;&quot;空字符串</span><br><span class="line">number 0 和 NaN</span><br><span class="line">object null</span><br><span class="line">undefined undefined</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>number     数字</p>
-<ul>
-<li>十进制（直接输入）</li>
-<li>八进制（前面加0）</li>
-<li>十六进制（前面加0x）</li>
-<li>NaN  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">isNaN(NaN)  //true</span><br><span class="line">isNaN(10)   //false</span><br><span class="line">isNaN(&quot;10&quot;) //false 转换成10</span><br><span class="line">isNaN(&quot;BLUE&quot;) //true 不能转换成数值</span><br><span class="line">isNaN(ture) //false 转换成1</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>string    字符串</p>
-</li>
-<li>object    对象或者null</li>
-<li>function  函数</li>
-</ul>
-</li>
-<li>数值转换<ul>
-<li>Number()</li>
-<li>parseInt()</li>
-<li>parseFloat()</li>
-</ul>
-</li>
-<li>字符串转换<ul>
-<li>toString()<ul>
-<li>null undefined 没有这个方法</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h2><ul>
-<li>一元操作符（只能操作一个值的操作符）<ul>
-<li>i++</li>
-<li>++i</li>
-<li>i–</li>
-<li>–i<blockquote>
-<p>递增和递减操作是在包含它们的语句被求值之后才执行。</p>
-</blockquote>
-</li>
-<li>+</li>
-<li>-</li>
-</ul>
-</li>
-<li><p>位操作符</p>
-<blockquote>
-<p>有符号的整数，第三十二位表示数值的正负<br>0表示正数，1表示负数<br>正数为纯二进制格式存储<br>负数要进行三步（补码=反码+1）</p>
-<pre><code>- 绝对值的二进制码
-- 反码
-- +1
-</code></pre></blockquote>
-<ul>
-<li>NOT(按位非)<ul>
-<li>~ 返回数值的反码</li>
-</ul>
-</li>
-<li>AND（按位与）<ul>
-<li>&amp; （逻辑乘） 两个数值都为1的时候才返回1</li>
-</ul>
-</li>
-<li>OR（按位或）<ul>
-<li>| （逻辑加） 两个数值都为0的时候才返回0</li>
-</ul>
-</li>
-<li>XOR<ul>
-<li>^ 两个数值只有一个1时才返回1，否则返回0</li>
-</ul>
-</li>
-<li>左移<ul>
-<li>&lt;&lt;</li>
-</ul>
-</li>
-<li>有符号的右移<ul>
-<li><blockquote>
-<p>&gt;</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li>无符号的右移<ul>
-<li><blockquote>
-<blockquote>
-<p>&gt;</p>
-</blockquote>
-</blockquote>
-</li>
-<li>正数的无符号右移和正数的有符号右移结果相同</li>
-<li>负数的无符号进行补码形式表示</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>布尔操作符<ul>
-<li>逻辑非！</li>
-<li>逻辑与&amp;&amp;（*）</li>
-<li>逻辑或||（+）</li>
-</ul>
-</li>
-<li>乘性操作符<ul>
-<li>乘法 *</li>
-<li>除法 /</li>
-<li>求模 %</li>
-</ul>
-</li>
-<li>加性操作符<ul>
-<li>+</li>
-<li>-</li>
-</ul>
-</li>
-<li>关系操作符<ul>
-<li><blockquote>
-<p>&lt; &lt;= &gt;=</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li>相等操作符<ul>
-<li>==</li>
-<li>!=</li>
-<li>===</li>
-</ul>
-</li>
-<li><p>条件操作符</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var max = (num1 &gt; num2) ? num1 : num2;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>赋值操作符</p>
-<ul>
-<li>=</li>
-</ul>
-</li>
-</ul>
-<h2 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h2><ul>
-<li><p>if 语句</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">if (a &gt; 5) &#123;</span><br><span class="line">    alert (&quot;more than 5&quot;);</span><br><span class="line">&#125;    </span><br><span class="line">else &#123;</span><br><span class="line">    alert(&quot;less than 5&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>do-while 语句</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var i = 0;</span><br><span class="line">do &#123;</span><br><span class="line">    i += 2;</span><br><span class="line">&#125; while (i &lt; 10);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>while 语句</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var i = 0;</span><br><span class="line">while (i &lt; 10) &#123;</span><br><span class="line">    i += 2;　</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>for 语句</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for ( var i = 0 ; i&lt; 10; i++)&#123;</span><br><span class="line">    alert(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>for-in 语句(枚举对象的属性)</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for (var name in window) &#123;</span><br><span class="line">    document.write(name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>break &amp;&amp; continue 语句</p>
-<ul>
-<li>break立即退出循环，强制继续执行循环后面的语句</li>
-<li>continue 立即退出循环，返回循环顶部</li>
-</ul>
-</li>
-<li><p>switch 语法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">switch(i) &#123;</span><br><span class="line">    case 25 : alert (&quot;25&quot;);</span><br><span class="line">    break;</span><br><span class="line">    case 5 : alert (&quot;5&quot;);</span><br><span class="line">    break;</span><br><span class="line">    default: alert (&quot;other&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function name(e) &#123;</span><br><span class="line">    alert(e);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>参数<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function howmanyargs()&#123;</span><br><span class="line">   alert(arguments.length);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">howmanyargs()  //0</span><br><span class="line">howmanyargs(12) //1</span><br><span class="line">howmanyargs(&quot;string&quot;,45) //2</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/06/27/JS-第一课/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -627,9 +445,6 @@
 </ul>
 </li>
 </ul>
-<p>ST2:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import urllib2,os; pf=&apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), &apos;wb&apos; ).write( urllib2.urlopen( &apos;http://sublime.wbond.net/&apos; +pf.replace( &apos; &apos;,&apos;%20&apos; )).read()); print( &apos;Please restart Sublime Text to finish installation&apos;)</span><br></pre></td></tr></table></figure>
-<p> ST3:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import urllib.request,os; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), &apos;wb&apos;).write(urllib.request.urlopen( &apos;http://sublime.wbond.net/&apos; + pf.replace(&apos; &apos;,&apos;%20&apos;)).read())</span><br></pre></td></tr></table></figure></p>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/06/22/Sublime-使用技巧/#more" rel="contents">
               阅读全文 &raquo;
@@ -860,8 +675,6 @@
       
         
           <h3 id="Less是什么"><a href="#Less是什么" class="headerlink" title="Less是什么"></a>Less是什么</h3><p>动态样式语言，属于CSS预处理语言的一种，像写函数那样子写CSS.</p>
-<hr>
-<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/*我是被编译的*/</span><br><span class="line">//不会被编译</span><br></pre></td></tr></table></figure>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/05/11/Less学习笔记/#more" rel="contents">
               阅读全文 &raquo;
@@ -999,7 +812,6 @@
 </ul>
 </li>
 </ul>
-<hr>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/04/16/初探键盘事件/#more" rel="contents">
               阅读全文 &raquo;
