@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="JS,JavaScript高级程序设计," />
 
 
 
@@ -84,16 +84,31 @@
 
 
 
-<meta name="description" content="一个简易的Hexo的搭建博客的教程，搭建环境：Window 10，node（v6.0.0），git（2.8.1.windows.1）">
+<meta name="description" content="变量
+基本类型
+引用类型
+
+12345678910//直接列几段代码来熟悉function add(num) &amp;#123;num += 10;return num;&amp;#125;var count = 20;var result = add(count);console.log(count); // 20console.log(result); //30
+12345678function setNa">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo 搭建博客">
-<meta property="og:url" content="http://sandytt.github.io/2016/05/12/Hexo-搭建博客/index.html">
+<meta property="og:title" content="JS 第二课">
+<meta property="og:url" content="http://sandytt.github.io/2016/07/02/JS-第二课/index.html">
 <meta property="og:site_name" content="COOLFE">
-<meta property="og:description" content="一个简易的Hexo的搭建博客的教程，搭建环境：Window 10，node（v6.0.0），git（2.8.1.windows.1）">
-<meta property="og:updated_time" content="2016-06-27T14:48:38.239Z">
+<meta property="og:description" content="变量
+基本类型
+引用类型
+
+12345678910//直接列几段代码来熟悉function add(num) &amp;#123;num += 10;return num;&amp;#125;var count = 20;var result = add(count);console.log(count); // 20console.log(result); //30
+12345678function setNa">
+<meta property="og:updated_time" content="2016-07-02T14:55:20.581Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo 搭建博客">
-<meta name="twitter:description" content="一个简易的Hexo的搭建博客的教程，搭建环境：Window 10，node（v6.0.0），git（2.8.1.windows.1）">
+<meta name="twitter:title" content="JS 第二课">
+<meta name="twitter:description" content="变量
+基本类型
+引用类型
+
+12345678910//直接列几段代码来熟悉function add(num) &amp;#123;num += 10;return num;&amp;#125;var count = 20;var result = add(count);console.log(count); // 20console.log(result); //30
+12345678function setNa">
 
 
 
@@ -111,7 +126,7 @@
   };
 </script>
 
-  <title> Hexo 搭建博客 | COOLFE </title>
+  <title> JS 第二课 | COOLFE </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -251,7 +266,7 @@
             
             
               
-                Hexo 搭建博客
+                JS 第二课
               
             
           </h1>
@@ -263,8 +278,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-12T20:43:40+08:00" content="2016-05-12">
-              2016-05-12
+            <time itemprop="dateCreated" datetime="2016-07-02T22:53:23+08:00" content="2016-07-02">
+              2016-07-02
             </time>
           </span>
 
@@ -310,40 +325,35 @@
       
 
       
-        <p>一个简易的Hexo的搭建博客的教程，搭建环境：Window 10，node（v6.0.0），git（2.8.1.windows.1）</p>
+        <h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><ul>
+<li>基本类型</li>
+<li>引用类型</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//直接列几段代码来熟悉</span><br><span class="line"></span><br><span class="line">function add(num) &#123;</span><br><span class="line">num += 10;</span><br><span class="line">return num;</span><br><span class="line">&#125;</span><br><span class="line">var count = 20;</span><br><span class="line">var result = add(count);</span><br><span class="line">console.log(count); // 20</span><br><span class="line">console.log(result); //30</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function setName(obj) &#123;</span><br><span class="line">	obj.name = &quot;first&quot;;</span><br><span class="line">	obj = new Object();</span><br><span class="line">	obj.name = &quot;second&quot;;</span><br><span class="line">&#125;</span><br><span class="line">var person =  new Object();</span><br><span class="line"> setName(person);</span><br><span class="line"> console.log(person.name); // first</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h3 id="准备工作："><a href="#准备工作：" class="headerlink" title="准备工作："></a>准备工作：</h3><ul>
-<li>Node.js安装</li>
-<li>git安装</li>
-<li>github账号注册</li>
-<li>git 配置用户名和邮箱<blockquote>
-<p>在config后加上 –global 即可全局设置用户名和邮箱。</p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function setName(obj) &#123;</span><br><span class="line">	obj.name = &quot;first&quot;;</span><br><span class="line">	obj = new Object();</span><br><span class="line">	obj.name = &quot;second&quot;;</span><br><span class="line">	return obj;</span><br><span class="line">&#125;</span><br><span class="line">var person =  new Object();</span><br><span class="line"> setName(person);</span><br><span class="line"> console.log(person.name); // first</span><br><span class="line"></span><br><span class="line">var person2 = setName(person);</span><br><span class="line">console.log(person2.name); // second</span><br></pre></td></tr></table></figure>
+<p><strong>所有引用类型的值都是Object的实例，数组和对象都是引用类型，修改的只是指针，和基本类型不同。</strong></p>
+<h3 id="小结："><a href="#小结：" class="headerlink" title="小结："></a><strong>小结</strong>：</h3><ul>
+<li>基础类型值在内存中占据固定大小的空间，因此被保存在栈内存中；</li>
+<li>引用类型的值是对象，保存在堆内存中；</li>
+<li>包含引用类型值的变量实际上包含的并不是对象本身，而是一个指向该对象的指针；</li>
+<li>从一个变量向另一个变量复制引用类型的值，复制的其实是指针，因此两个变量最终都指向同一个对象。</li>
+</ul>
+<h2 id="执行环境"><a href="#执行环境" class="headerlink" title="执行环境"></a>执行环境</h2><ul>
+<li>作用<ul>
+<li>定义了变量或函数有权访问的其他数据</li>
+<li>决定了他们各自的行为</li>
+</ul>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name &quot;user.name&quot;</span><br><span class="line">git config user.email &quot;user.email&quot;</span><br></pre></td></tr></table></figure>
-<hr>
-<h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><p>1.在Node command prompt 输入命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
-<p>2.在自己喜欢的路径新建文件夹右键git bash 进入终端，输入命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init </span><br><span class="line">nmp install</span><br></pre></td></tr></table></figure>
-<p>3.然后文件夹目录如下：</p>
-<blockquote>
-<p>├── _config.yml<br>├── package.json<br>├── scaffolds<br>├── source<br>|   ├── _drafts<br>|   └── _posts<br>└── themes</p>
-</blockquote>
-<p>4.输入以下命令就可以在本地预览了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
-<p>5.在github上面新建仓库，仓库名为“用户名+.io”,并生成Publish page页面。</p>
-<p>6.创建SSH KEYS<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></p>
-<p>一路回车，没有设置密码，看到很多泡泡图就表示创建成功了。</p>
-<p>如果需要用到多个SSH KEYS，可以通过 -f 来设置路径</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -f ~/.ssh/github -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
-<p>7.找到自己的SSH KEYS,找到.pub后缀名的文件，复制内容到github SSH KEYS</p>
-<p>8.配置_config.yml (!!!!冒号后面有个空格!!!!)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: github</span><br><span class="line">  repository: https://github.com/sandytt/sandytt.github.io.git</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>访问线上链接就好了。</p>
-<hr>
-<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><ul>
-<li><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">HEXO</a></li>
-<li><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">NEXT</a></li>
+<h3 id="小结：-1"><a href="#小结：-1" class="headerlink" title="小结："></a><strong>小结</strong>：</h3><ul>
+<li>分成全局环境和函数执行环境；</li>
+<li>每次进入一个新执行环境，都会创建一个用于搜索变量和函数的作用域链；</li>
+<li>全局环境只能访问在全局环境中的定义的变量和函数，而不能直接访问局部变量中的任何数据。</li>
+</ul>
+<h2 id="参考书目"><a href="#参考书目" class="headerlink" title="参考书目"></a>参考书目</h2><ul>
+<li>《JavaScript高级程序设计》 第四章 </li>
 </ul>
 
       
@@ -366,7 +376,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag">#hexo</a>
+            <a href="/tags/JS/" rel="tag">#JS</a>
+          
+            <a href="/tags/JavaScript高级程序设计/" rel="tag">#JavaScript高级程序设计</a>
           
         </div>
       
@@ -375,17 +387,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/05/11/Less学习笔记/" rel="next" title="Less学习笔记">
-                <i class="fa fa-chevron-left"></i> Less学习笔记
+              <a href="/2016/06/27/JS-第一课/" rel="next" title="JS 第一课">
+                <i class="fa fa-chevron-left"></i> JS 第一课
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/06/22/Sublime-使用技巧/" rel="prev" title="Sublime 使用技巧">
-                Sublime 使用技巧 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -528,7 +536,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#准备工作："><span class="nav-number">1.</span> <span class="nav-text">准备工作：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开始"><span class="nav-number">2.</span> <span class="nav-text">开始</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考链接"><span class="nav-number">3.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#变量"><span class="nav-number">1.</span> <span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#小结："><span class="nav-number">1.1.</span> <span class="nav-text">小结：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#执行环境"><span class="nav-number">2.</span> <span class="nav-text">执行环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#小结：-1"><span class="nav-number">2.1.</span> <span class="nav-text">小结：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考书目"><span class="nav-number">3.</span> <span class="nav-text">参考书目</span></a></li></ol></div>
             
           </div>
         </section>
